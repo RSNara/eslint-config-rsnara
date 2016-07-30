@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-rsnara",
+  "version": "1.0.0",
+  "description": "An .eslintrc base.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramanpreet Nara",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint-plugin-immutable": "^1.0.0",
+    "eslint-plugin-react": "^5.2.2"
+  }
+}
