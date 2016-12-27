@@ -1,16 +1,19 @@
+/* eslint max-len: 0 */
+/* eslint immutable/no-mutation: 0 */
+
 module.exports = {
   'parser': 'babel-eslint',          // https://github.com/babel/babel-eslint
   'plugins': [
     'react',                          // https://github.com/yannickcr/eslint-plugin-react
-    'immutable'
+    'immutable',
   ],
   'env': {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
     'browser': true,                 // browser global variables
     'node': true,                     // Node.js global variables and Node.js-specific rules
-    'es6': true
+    'es6': true,
   },
   'parserOptions': {
-    'ecmaVersion': 6
+    'ecmaVersion': 6,
   },
   'rules': {
     'immutable/no-mutation': 2,
@@ -43,7 +46,7 @@ module.exports = {
     'no-shadow-restricted-names': 2, // http://eslint.org/docs/rules/no-shadow-restricted-names
     'no-unused-vars': [2, {          // http://eslint.org/docs/rules/no-unused-vars
       'vars': 'local',
-      'args': 'after-used'
+      'args': 'after-used',
     }],
     'no-use-before-define': 0,       // http://eslint.org/docs/rules/no-use-before-define
 
@@ -79,7 +82,7 @@ module.exports = {
     'curly': [2, 'multi-line'],      // http://eslint.org/docs/rules/curly
     'default-case': 2,               // http://eslint.org/docs/rules/default-case
     'dot-notation': [2, {            // http://eslint.org/docs/rules/dot-notation
-      'allowKeywords': true
+      'allowKeywords': true,
     }],
     'eqeqeq': 2,                     // http://eslint.org/docs/rules/eqeqeq
     'guard-for-in': 0,               // http://eslint.org/docs/rules/guard-for-in
@@ -119,38 +122,38 @@ module.exports = {
  * Style
  */
     'indent': ['error', 2, {
-      'SwitchCase': 1                // http://eslint.org/docs/rules/indent
+      'SwitchCase': 1,                // http://eslint.org/docs/rules/indent
     }],
     'brace-style': [2,               // http://eslint.org/docs/rules/brace-style
       '1tbs', {
-      'allowSingleLine': true
-    }],
+        'allowSingleLine': true,
+      }],
     'object-shorthand': ['error', 'always'],
     'max-len': ['error', 100],
     'prefer-arrow-callback': ['error', { 'allowNamedFunctions': true }],
     'quotes': [
-      2, 'single', 'avoid-escape'    // http://eslint.org/docs/rules/quotes
+      2, 'single', 'avoid-escape',    // http://eslint.org/docs/rules/quotes
     ],
     'camelcase': [2, {               // http://eslint.org/docs/rules/camelcase
-      'properties': 'never'
+      'properties': 'never',
     }],
     'comma-spacing': [2, {           // http://eslint.org/docs/rules/comma-spacing
       'before': false,
-      'after': true
+      'after': true,
     }],
     'comma-style': [2, 'last'],      // http://eslint.org/docs/rules/comma-style
     'eol-last': 2,                   // http://eslint.org/docs/rules/eol-last
     'func-names': 1,                 // http://eslint.org/docs/rules/func-names
     'key-spacing': [2, {             // http://eslint.org/docs/rules/key-spacing
-        'beforeColon': false,
-        'afterColon': true
+      'beforeColon': false,
+      'afterColon': true,
     }],
     'new-cap': [2, {                 // http://eslint.org/docs/rules/new-cap
       'newIsCap': true,
-      'capIsNew': false
+      'capIsNew': false,
     }],
     'no-multiple-empty-lines': [2, { // http://eslint.org/docs/rules/no-multiple-empty-lines
-      'max': 2
+      'max': 2,
     }],
     'no-nested-ternary': 2,          // http://eslint.org/docs/rules/no-nested-ternary
     'no-new-object': 2,              // http://eslint.org/docs/rules/no-new-object
@@ -163,7 +166,7 @@ module.exports = {
     'semi': [2, 'always'],           // http://eslint.org/docs/rules/semi
     'semi-spacing': [2, {            // http://eslint.org/docs/rules/semi-spacing
       'before': false,
-      'after': true
+      'after': true,
     }],
     'keyword-spacing': 2,            // http://eslint.org/docs/rules/keyword-spacing
     'space-before-blocks': 2,        // http://eslint.org/docs/rules/space-before-blocks
@@ -188,14 +191,13 @@ module.exports = {
     'react/jsx-sort-prop-types': 0,  // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-prop-types.md
     'react/jsx-uses-react': 2,       // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
     'react/jsx-uses-vars': 2,        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md
-    'react/no-did-mount-set-state': [2, 'disallow-in-func'], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
+    'react/no-did-mount-set-state': [2, 'allow-in-func'], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
     'react/no-did-update-set-state': 2, // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-did-update-set-state.md
     'react/no-multi-comp': 2,        // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
     'react/no-unknown-property': 2,  // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
     'react/prop-types': 2,           // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/react-in-jsx-scope': 2,   // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     'react/self-closing-comp': 2,    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
-    'react/jsx-wrap-multilines': 2,      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md
     'react/sort-comp': [2, {         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
       'order': [
         'displayName',
@@ -205,7 +207,7 @@ module.exports = {
         'mixins',
         'statics',
         'defaultProps',
-         '/^_(?!(on|get|render))/',
+        '/^_(?!(on|get|render))/',
         'constructor',
         'getDefaultProps',
         'getInitialState',
@@ -221,8 +223,8 @@ module.exports = {
         '/^_?on.+$/',
         '/^_?get.+$/',
         '/^_?render.+$/',
-        'render'
-      ]
-    }]
-  }
-}
+        'render',
+      ],
+    }],
+  },
+};
