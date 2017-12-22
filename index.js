@@ -177,12 +177,14 @@ module.exports = {
 /**
  * JSX style
  */
-    'react/jsx-curly-spacing': ['error', 'never'],
+    'react/jsx-curly-spacing': ['error', {
+      'beforeSelfClosing': 'never'
+    }],
     'react/jsx-key': ['error'],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
     'react/jsx-pascal-case': ['error'],
-    'react/jsx-space-before-closing': ['error', 'never'],
+    'react/jsx-tag-spacing': ['error', 'never'],
     'react/display-name': 0,         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
     'react/jsx-boolean-value': 2,    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     'jsx-quotes': [2, 'prefer-double'], // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-quotes.md
